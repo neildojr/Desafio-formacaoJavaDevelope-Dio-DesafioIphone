@@ -1,0 +1,64 @@
+package iphone.apps.sistemaIphone;
+
+import iphone.apps.navegador.Navegador;
+import iphone.apps.reprodutormusical.ReprodutordeMusica;
+import iphone.apps.telefone.Telefone;
+
+public class Iphone implements Navegador, ReprodutordeMusica, Telefone {
+
+	@Override
+	public void ligar() {
+		System.out.println("Ligando Iphone...");
+		System.out.println("                                                               ");
+		System.out.println("Iphone ligado");
+		}
+	
+	@Override
+	public void receberLigação() {
+		System.out.println("                                                               ");
+		System.out.println("Recebendo Ligação...");
+		atender();
+	}
+
+	@Override
+	public void atender() {
+		System.out.println("atendendo");
+		
+	}
+
+	@Override
+	public void correioDeVoz() {
+		System.out.println("Reproduzindo mensagem de Voz");				
+	}
+
+	@Override
+	public void selecionarMusica() {
+		System.out.println("Selecionando Musica");		
+	}
+
+	@Override
+	public void tocarMusica() {
+		System.out.println("Reproduzindo musica");
+	}
+
+	@Override
+	public void pausarMusica() {
+		System.out.println("Pausando musica");		
+	}
+
+	@Override
+	public void adicionarNovaAba() {
+		System.out.println("Adicionando Aba");
+	}
+
+	@Override
+	public void exibirPagina() {
+		System.out.println("Exibindo Aba");
+		System.out.println("https://www.youtube.com/");
+	}
+	@Override
+	public void atualizarPagina() {
+		System.out.println("atualizando Pagina");		
+	}
+
+}

@@ -1,0 +1,14 @@
+package iphone.apps;
+
+import iphone.apps.sistemaIphone.Iphone;
+
+public class Usuario extends Iphone {
+	public static void main(String[] args) {
+		Iphone iphone = new Iphone();
+		
+		iphone.ligar();
+		iphone.receberLigação();
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package iphone.apps.telefone;
+
+public class Discagem implements Telefone {
+
+	@Override
+	public void ligar() {
+		System.out.println("ligado");		
+	}
+	@Override
+	public void receberLigação() {
+		atender();
+	}
+
+	@Override
+	public void atender() {
+		System.out.println("atendendo");		
+	}
+	@Override
+	public void correioDeVoz() {
+		System.out.println("Reproduzindo mensagem de Voz");			
+	}
+
+}

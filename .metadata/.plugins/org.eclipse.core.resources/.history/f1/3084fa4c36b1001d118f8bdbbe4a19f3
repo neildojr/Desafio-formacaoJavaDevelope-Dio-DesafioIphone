@@ -1,0 +1,20 @@
+package iphone.apps.reprodutormusical;
+
+public class Ipod implements ReprodutordeMusica{
+
+	@Override
+	public void selecionarMusica() {
+		System.out.println("Selecionando Musica no MyIpod");		
+	}
+
+	@Override
+	public void tocarMusica() {
+		System.out.println("Reproduzindo musica via MyIpod");
+	}
+
+	@Override
+	public void pausarMusica() {
+		System.out.println("Pausando musica via MyIpod");		
+	}
+
+}
